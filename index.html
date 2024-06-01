@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- vinculación con estilos y favicon -->
+    <link rel="stylesheet" href="./static/css/style.css">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <title>CAC-Movies</title>
+    <!-- vinculación con google-fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    
+
+    
+    <!-- vinculación fontawesome -->
+    <script src="https://kit.fontawesome.com/f7fb471b65.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- Encabezado -->
+    <header class="header">
+
+        <nav class="emcabezado">
+            <!-- Logo -->
+            <div id="logo">
+                <a href="/">
+                    <!-- Más adelante se aplicará estilo especifico
+                        al texto y se agregará un ícono -->
+                    <!-- <i class="fas fa-film"></i> -->
+                    <i class="fas fa-film"></i>
+                    <span class="logo-text">CAC - Movies</span>
+                </a>
+            </div>
+
+            <!-- hipervínculos del menú -->
+            <ul class="nav-links">
+                <li><a href="#search">Tendencias</a></li>
+                <li><a href="./register.html"  class="btn-cac">Registrarse</a></li>
+                <li>
+                    <a href="./login.html" target="_blank">
+                        <!-- Más adelante se aplicará estilo especifico
+                        al texto y se agregará un ícono -->
+                        <!-- <i class="fas fa-sign-in-alt"></i> -->
+                        <i class="fas fa-sign-in-alt"></i>
+                        <span class="login-text">Iniciar Sesión</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- Contenido -->
+    <main>
+
+        <!-- banner: una sección prominente en la 
+            parte superior de una página que puede
+            contener información destacada, como anuncios,
+            mensajes importantes, o un diseño gráfico distintivo. -->
+        <section id="banner" class="d-flex">
+            
+            <div class="card-banner container">
+                <h1 class="titulo1">Películas y series ilimitadas y mucho más.</h1>
+                <br>
+                <h2 class="titulo2">Disfruta donde quieras. Cancela cuando quieras.</h2>
+                <br>
+                <a href="./register.html" class="btn-cac">Registrate</a>
+            </div>
+
+        </section>
+
+        <!-- search: sección que contiene un mensaje de búsqueda
+            y un campo de entrada de texto para que los usuarios
+            ingresen lo que desean buscar en un sitio web
+              -->
+        <section id="search" class="estrenos">
+            <h2 class="search-title">Tendencias</h2>
+            <!--<input type="text" class="input-search" placeholder="Buscar...">-->
+        </section>
+
+        <!-- popular: mostrar imágenes de las peliculas
+            con tendencia hoy -->
+        <section id="popular">
+
+            <!-- División contenedora del titulo
+                e imagenes -->
+            <div id="contenedor-tarjetas" class="contenedor">
+
+               
+                        
+    
+                </div>
+
+        </section>
+    </main>
+
+    <footer id="footer" class="footer-c">
+        <nav class="nav-footer">
+            <ul class="listaNav">
+                <li class="li-footer"><a class="linkNav" href="">Términos y condiciones</a></li>
+                <li class="li-footer"><a class="linkNav" href="">Preguntas frecuentes</a></li>
+                <li class="li-footer"><a class="linkNav" href="">Ayuda</a></li>
+                <li class="li-footer"><a class="linkNav administradorPeliculas" href="">Administrador Peliculas</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+ <script src="./fetch.js"></scripts>
+
+</body>
+
+</html>

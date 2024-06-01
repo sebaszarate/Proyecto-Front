@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./static/css/style.css">
+
+
+  <title>CaC-Movies, peliculas y series online</title>
+  <!-- zona del favicon -->
+  <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+  <!-- zona de script para activas iconos -->
+  <script src="https://kit.fontawesome.com/fa04600604.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="body-reg">
+  <header class="header">
+
+    <nav class="emcabezado">
+      <!-- Logo -->
+      <div id="logo">
+        <a href="/">
+          <!-- Más adelante se aplicará estilo especifico
+                        al texto y se agregará un ícono -->
+          <!-- <i class="fas fa-film"></i> -->
+          <i class="fas fa-film"></i>
+          <span class="logo-text">CAC - Movies</span>
+        </a>
+      </div>
+
+      <!-- hipervínculos del menú -->
+      <ul class="nav-links">
+        <li><a href="./tendencias.html" target="_blank">Tendencias</a></li>
+        <li>
+          <a href="./login.html">
+            <!-- Más adelante se aplicará estilo especifico
+                        al texto y se agregará un ícono -->
+            <!-- <i class="fas fa-sign-in-alt"></i> -->
+            <i class="fas fa-sign-in-alt"></i>
+            <span class="login-text">Iniciar Sesión</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+
+    <main class="main-reg">
+
+      <section class="form-reg">
+
+        <h4>Forlario Registro</h4>
+        <input class="controls" type="text" class="nombres-f" id="name" placeholder="Ingrese su Nombre" >
+        <input class="controls" type="email" class="email-f" id="email-f" placeholder="Ingrese su Email" >
+        <input class="controls" type="password" class="passw-f" id="password" placeholder="Ingrese contraseña" >
+        <labe class="label-r"><input type="checkbox" class="condi-f" id="condiciones"  >Terminos y Condiciones</label>
+        br
+        
+        <input class="botons" onclick="nuevoRegistro()"  id="btn-registro"  type="submit" value="Registrar">
+      </section>
+
+    </main>
+
+
+    <!-- seccion del pie de pagina -->
+ 
+
+      <footer id="footer" class="footer-c">
+        <nav class="nav-footer">
+            <ul class="listaNav">
+                <li class="li-footer"><a class="linkNav" href="">Términos y condiciones</a></li>
+                <li class="li-footer"><a class="linkNav" href="">Preguntas frecuentes</a></li>
+                <li class="li-footer"><a class="linkNav" href="">Ayuda</a></li>
+                <li class="li-footer"><a class="linkNav administradorPeliculas" href="">Administrador Peliculas</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+
+    
+    <script src="fetch.js"></script>
+    
+
+</body>
+
+
+</html>

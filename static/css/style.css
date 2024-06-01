@@ -1,0 +1,350 @@
+/*Repaso css1: Eliminar la decoracion de los 
+hipervinculos, agregar color y tamaño fuente a la etiqueta <h2></h2>*/
+
+/*"":root, es un selector especial que se utliza principalmente para 
+definir variables personalizadas de css*/
+
+:root {
+  --primry-color: #9f3647;
+  --bg-color: #181419;
+  --secondary-color: #ffc098;
+  --third-color: #db4648;
+  --third-bis-color: #db4648f2;
+  --bg-input-color: #4f31572c;
+  --white-color: #fdf5ef;
+  /*fuentes*/
+  --primary-font: "Nunito", sans-serif;
+}
+
+/*selectotor all * */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*selectores de etiquetas*/
+
+a {
+  text-decoration: none;
+  color: var(--white-color);
+}
+
+h2 {
+  color: var(--white-color);
+  font-size: 2rem;
+}
+
+#logo {
+  font-weight: bold;
+}
+
+.search-title {
+  font-size: 4rem;
+}
+
+.movie-item-img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+}
+
+/*Repaso css 2: Unidades de medidas. Colores css
+Fondos en css. Fuentes y tipografia.
+Estilos para textos y listas. Iconos --------*/
+
+/*Se incorporo en el index.html los links para referenciar fuent esterna.*/
+/*Se agrego la eriqueta <link> que se utiliza para especificar el incono
+(favicon) que se muestra en la pestaña del navegador o en la barra de direcciones*/
+
+.header {
+  /*background-color: var(--primary-color);
+  color: var(--white-color);
+  /*padding: 2.5vh 0;*/
+  /*height: 10vh;
+  position: sticky;
+  top: 0;
+  z-index: 10;*/
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+  background-color: #9f3647;
+  color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  height: initial;
+
+  
+}
+
+body {
+  background-color: #181419;
+  font-family: var(--primary-font);
+ 
+}
+
+#banner {
+  background-image: url(../img/banner-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /*Alto*/
+  box-shadow: inset 0 0 0 2000px rgba(84, 84, 84, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--white-color);
+}
+
+.titulo1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.titulo2 {
+  font-size: 2.2rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.btn-cac {
+  background-color: var(--primry-color);
+  color: var(--white-color);
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: none;
+}
+
+.btn-cac:hover{
+  background-color: var(--bg-input-color);
+}
+
+/*Repaso CSS 3 - Plan de estudios : Modelo de caja y posicionamiento.
+Modelos de caja y propiedades .
+Posicionamiento y visualizacion.*/
+
+/*Estilo al encabezado, agregar estilos por el selecto clase::
+color de fondo, color fuente, posicion del 
+enzacbezado, ancho y z-index;*/
+
+/*no tenemos mucha especificidad*/
+/*selectores de clase*/
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: right;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li:first-child {
+  margin-left: 0;
+}
+
+nav ul li:last-child {
+  margin-right: 2vw;
+}
+
+nav ul li a,
+nav > a {
+  display: block; /*convierte los elemento de linea a bloque en el menu*/
+  padding: 10px 20px;
+  text-decoration: none;
+  color: var(--secondary-color);
+  transition: background-color 0.3s;
+}
+/*Otra pseudo clase en el estado "sobrevolado"*/
+/* Cambio de colos al pasar el mouse sobre los enlaces*/
+/*:hoverpermite aplicar estilos especiales a un elemento cuando se encuentra en un estado especifico,
+como cuando el cursor se coloca sobre el */
+
+nav ul li a:hover {
+  background-color: var(--bg-input-color);
+}
+
+
+/*css peliculas*/
+
+.contenedor {
+	width: 90%;
+	max-width: 1000px;
+	margin: 40px auto 100px auto;
+
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 40px;
+}
+
+.contenedor .pelicula {
+	text-align: center;
+}
+
+.contenedor .pelicula .titulo {
+	font-size: 18px;
+	font-weight: 600;
+  color: var(--white-color);
+}
+
+.contenedor .pelicula .poster {
+	width: 100%;
+	margin-bottom: 10px;
+	border-radius: 15px;
+}
+
+
+
+.emcabezado {
+  /* display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: var(--primry-color);
+   padding: 10px;*/
+ 
+   
+   color: #ffffff;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: 'Nunito', sans-serif;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 1.5rem 0;
+   margin-left: 10px;
+   margin-right: 10px;
+   /*flex-direction: column;*/
+   row-gap: 20px;
+ }
+ 
+
+.footer-c{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+  background-color: #9f3647;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: initial;
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+.nav-footer{
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+  row-gap: 20px;
+}
+
+.listanav{
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  
+}
+
+.lifooter{
+  color: #ffffff;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+  margin-left: 20px;
+}
+
+.linkNav{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.estrenos{
+  text-align: center;
+}
+
+
+.form-reg{
+  width: 400px;
+  background-color:var(--bg-color) ;
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 4px;
+  font-family: var(--primary-font);
+  color: var(--white-color);
+  box-shadow: 7px 13px 37px #000;
+}
+
+.form-reg h4{
+  font-size: 22px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.controls{
+  width: 100%;
+  background-color: #24303c;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid var(--primry-color) ;
+  font-family: var(--primary-font);
+  font-size: 18px;
+  color: var(--white-color);
+}
+
+.label-r {
+  height: 40px;
+  
+    
+  line-height: 40px;
+}
+
+.form-reg .botons{
+  width: 100%;
+  background-color:var(--third-bis-color);
+  border: none;
+  padding: 12px;
+  color: var(--white-color);
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.body-reg{
+  background-color:#181419 ;
+  font-family: var(--primary-font);
+}
+
+.footer-c{
+
+}
